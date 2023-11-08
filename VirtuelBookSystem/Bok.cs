@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VirtuelBookSystem
 {
-    internal class Bok : Media
+    internal class Bok : Media, IUtlanbar
     {
         public string Titel { get; set; }
         public string Författare { get; set; }
@@ -29,5 +29,14 @@ namespace VirtuelBookSystem
             Console.WriteLine($"Titel: {Titel} \nFörfattare: {Författare} \nISBN: {ISBN}");
         }
 
+        public void LanaUt()
+        {
+            Console.WriteLine("Bok utlånad");
+        }
+
+        public void Aterlamna()
+        {
+            Console.WriteLine("Bok återlämnad");
+        }
     }
 }
