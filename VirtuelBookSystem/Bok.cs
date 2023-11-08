@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VirtuelBookSystem
+﻿namespace VirtuelBookSystem
 {
     internal class Bok : Media, IUtlanbar
     {
@@ -13,7 +7,18 @@ namespace VirtuelBookSystem
 
         public string ISBN { get; set; }
 
-      
+        public Bok(string titel, string författare, string iSBN)
+        {
+            Titel = titel;
+            Författare = författare;
+            ISBN = iSBN;
+        }
+        public Bok()
+        {
+
+        }
+
+
         public override void SpelaUpp()
         {
             Console.WriteLine("Boken är analog, går inte att spela upp");
