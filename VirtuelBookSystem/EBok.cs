@@ -8,6 +8,10 @@ namespace VirtuelBookSystem
 {
     internal class Ebok : Bok
     {
+        public Ebok(string titel, string författare, string iSBN) :base(titel,författare,iSBN)
+        {
+            
+        }
         public string FilStorlek { get; set; }
         public string DownloadUrl { get; set; }
 
