@@ -8,13 +8,13 @@ namespace VirtuelBookSystem
 {
     internal class Ebok : Bok
     {
-        public string filStorlek { get; set; }
-        public string downloadUrl { get; set; }
+        public string FilStorlek { get; set; }
+        public string DownloadUrl { get; set; }
 
-        public override void SkrivutInfo()
+        public override void SkrivUtInfo()
         {
             base.SkrivUtInfo();
-            Console.WriteLine($"Filstorlek: {filStorlek} \nDownloadUrl: {downloadUrl}");
+            Console.WriteLine($"Filstorlek: {FilStorlek} \nDownloadUrl: {DownloadUrl}");
         }
     }
 }
